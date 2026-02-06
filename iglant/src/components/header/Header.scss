@@ -1,0 +1,24 @@
+@import "../../styles/theme";
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  header {
+    width: 100wv;
+    height: 70px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--text-main);
+    a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    
+  }
+}

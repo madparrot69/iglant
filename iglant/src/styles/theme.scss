@@ -1,0 +1,100 @@
+/* DEFAULT (Dark Tech) */
+:root {
+  --bg-main: #0b0f14;
+  --bg-card: #121826;
+
+  --text-main: #e6eaf2;
+  --text-muted: #9aa4b2;
+
+  --accent-primary: #6c7cff;
+  --accent-secondary: #22d3ee;
+  --border-soft: #1f2a44;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+}
+
+/* Light Clean */
+[data-theme="light"] {
+  --bg-main: #f7f9fc;
+  --bg-card: #ffffff;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  --accent-primary: #4f46e5;
+  --accent-secondary: #06b6d4;
+  --border-soft: #e2e8f0;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+}
+
+/* Neon Pulse */
+[data-theme="neon"] {
+  --bg-main: #07070d;
+  --bg-card: #0e0e1a;
+
+  --text-main: #f2f3ff;
+  --text-muted: #a1a1c7;
+
+  --accent-primary: #a855f7;
+  --accent-secondary: #22d3ee;
+  --border-soft: #23234a;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+}
+
+/* Soft Lo-Fi */
+[data-theme="soft"] {
+  --bg-main: #f4f1ec; /* теплий беж */
+  --bg-card: #faf7f2; /* світлі картки */
+  --bg-hover: #ece6dd; /* hover як папір */
+
+  --text-main: #2e2a26; /* теплий темний */
+  --text-muted: #7a7268; /* приглушений коричнево-сірий */
+
+  --accent-primary: #8b6f5a; /* какао / кава */
+  --accent-secondary: #c2a48a; /* латте */
+  --border-soft: #ded6cc;
+
+  --font-heading: "Playfair Display", serif; /* теплий, книжковий */
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+}
+
+/* Pink */
+[data-theme="pink"] {
+  --bg-main: #fff5fa;
+  --bg-card: #ffffff;
+  --bg-hover: #ffe4f1;
+
+  --text-main: #3b0a24;
+  --text-muted: #9b4a73;
+
+  --accent-primary: #ff4d9d; /* hot pink */
+  --accent-secondary: #ff8ccf; /* light pink */
+  --border-soft: #ffd1e8;
+
+  --font-heading: "Nunito", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+}
