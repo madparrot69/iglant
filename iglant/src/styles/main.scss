@@ -10,6 +10,8 @@ body {
   color: var(--text-main);
   background: var(--bg-main);
 
+  transition: filter 0.3s ease;
+
   h1,
   h2,
   h3,
@@ -28,5 +30,34 @@ body {
   .brand,
   .accent-title {
     font-family: var(--font-accent);
+  }
+
+  button,
+  a {
+    cursor: pointer;
+  }
+
+  button {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  ._dark-btn {
+    background-color: var(--dark-btn);
+    color: var(--light-btn);
+    border: none;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--dark-btn), white 10%);
+    }
+  }
+  ._light-btn {
+    background-color: var(--light-btn);
+    color: var(--dark-btn);
+    border: none;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 }

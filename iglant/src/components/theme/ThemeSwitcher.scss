@@ -1,0 +1,49 @@
+@import "../../styles/theme.scss";
+
+body {
+  .themeContainer {
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+    width: 250px;
+    height: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    background-color: red;
+
+    button {
+      position: relative;
+
+      width: 100%;
+      height: 60px;
+
+      border-radius: 0;
+
+      border: none;
+    }
+
+    .dark {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+    .light {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+    .neon {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+    .soft {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+    .pink {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+  }
+}

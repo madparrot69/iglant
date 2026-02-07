@@ -11,6 +11,8 @@ export default function Profile() {
       <main>
         <h1>Profile</h1>
         <p>Email: {user?.email}</p>
+
+        <h1></h1>
       </main>
     </>
   );

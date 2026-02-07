@@ -13,12 +13,17 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--text-main);
+    background-color: var(--text-muted);
     a {
       color: var(--text-muted);
       text-decoration: none;
     }
 
-    
+    .logo {
+      font-size: 30px;
+      font-weight: var(--font-weight-heading);
+
+      cursor: pointer;
+    }
   }
 }

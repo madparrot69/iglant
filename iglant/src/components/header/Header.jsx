@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signOut } from "firebase/auth";
 import { useAuth } from "../../context/AuthContext";
+import ThemeSwitcher from "../theme/ThemeSwitcher";
+
+import "./Header.scss";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -14,21 +17,22 @@ export default function Header() {
   };
 
   return (
-    <header
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "1rem",
-      }}
-    >
+    <header>
       <div className="logo" onClick={() => navigate("/")}>
         iglant.ai
       </div>
       <div className="buttons">
         {!user ? (
           <>
-            <button onClick={() => navigate("/login")}>Login</button>
-            <button onClick={() => navigate("/register")}>Register</button>
+            <button className="_dark-btn" onClick={() => navigate("/login")}>
+              Login
+            </button>
+            <button
+              className="_light-btn"
+              onClick={() => navigate("/register")}
+            >
+              Register
+            </button>
           </>
         ) : (
           <>
@@ -37,6 +41,7 @@ export default function Header() {
           </>
         )}
       </div>
+      <ThemeSwitcher />
     </header>
   );
 }
